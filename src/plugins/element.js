@@ -4,11 +4,50 @@ import {
     Form,
     FormItem,
     Input,
-    Message
+    Message,
+    Header,
+    Aside,
+    Container,
+    Main,
+    Menu,
+    Submenu,
+    MenuItem,
+    Breadcrumb,
+    BreadcrumbItem,
+    Card,
+    Row,
+    Col,
+    Table,
+    TableColumn,
+    Switch,
+    Tooltip,
+    Pagination,
+    Dialog,
+    MessageBox
 } from 'element-ui'
-
+// 将导入的 element-ui 组件注册为全局组件
 Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
-Vue.prototype.$message = Message // 将 Message 挂载为 Vue 原型上的一个属性
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Container)
+Vue.use(Main)
+Vue.use(Menu)
+Vue.use(Submenu)
+Vue.use(MenuItem)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Card)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Switch)
+Vue.use(Tooltip)
+Vue.use(Pagination)
+Vue.use(Dialog)
+    // 将导入的组件挂载为 Vue 原型上的一个属性
+Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
